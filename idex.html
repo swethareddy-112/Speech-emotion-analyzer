@@ -1,0 +1,68 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Speech Emotion Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>🎤 Speech Emotion Analyzer</h1>
+
+            <p class="subtitle">
+                Speak something and analyze the emotion in your speech
+            </p>
+
+            <div class="button-area">
+                <button id="startBtn">🎙️ Start Speaking</button>
+                <button id="stopBtn">⏹️ Stop</button>
+            </div>
+
+            <div id="status" class="status">
+                Click Start Speaking to begin.
+            </div>
+
+            <div class="emotion-box">
+
+                <h2>Detected Emotion</h2>
+
+                <div id="emoji" class="emoji">😐</div>
+
+                <div id="emotion" class="emotion">
+                    Neutral
+                </div>
+
+                <div id="confidence" class="confidence">
+                    Confidence: 0%
+                </div>
+
+            </div>
+
+            <div class="speech-box">
+
+                <h2>📝 Your Speech</h2>
+
+                <p id="transcript">
+                    Your speech will appear here...
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
